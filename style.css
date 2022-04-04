@@ -1,4 +1,83 @@
-.container{
+html{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.logo{
+    /* border: red dashed; */
+    font-size: 32px;
+    font-weight: 900;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: start; 
+    gap: 0.2rem;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 2rem;
+    grid-column: 1/2;
+    width: clamp(150px, 80%, 20vw);
+}
+
+.logo img{
+    height: 2rem;
+    justify-content: end;
+}
+
+.pageHeader{
+    /* border:goldenrod double; */
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+.pageHeader img{
+    height: 1.5rem; 
+}
+
+.pageHeader{
+    margin-left: 2em;
+}
+
+.searchBar input{
+    border-radius: 20px;
+    width: clamp(10vw,50vw,70vw);
+    height: 1.8rem;
+    border: none;
+    background-color: lightgray;
+    margin: 15px 40px;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+input[type=search]:focus{
+    outline: none;
+    background-color: rgb(184, 184, 184);
+}
+
+.footer{
+    grid-column: 1/-1;
+    grid-row: auto;
+    background-color: lightgray;
+    align-items: center;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.profileIcon img{
+    border-radius: 50%;
+    padding: 1rem;
 }
