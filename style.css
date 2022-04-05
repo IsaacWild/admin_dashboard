@@ -10,7 +10,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .sidebarContainer{
@@ -220,6 +220,7 @@ input[type=search]:focus{
     grid-auto-flow: row;
     padding: 1.2em;
     gap: 0.8rem;
+    /* Add in auto-fit and look back at old card project to see how they sized their cards. */
 }
 
 .projectTitle{
