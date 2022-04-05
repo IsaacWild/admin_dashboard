@@ -8,6 +8,10 @@ body{
     margin: 0px;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -214,13 +218,12 @@ input[type=search]:focus{
 .gridProjects{
     grid-area: 1/1/-1/2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr)); 
     grid-template-rows: 2rem 1fr;
     grid-auto-rows: 1fr;
     grid-auto-flow: row;
     padding: 1.2em;
     gap: 0.8rem;
-    /* Add in auto-fit and look back at old card project to see how they sized their cards. */
 }
 
 .projectTitle{
@@ -232,12 +235,18 @@ input[type=search]:focus{
 .gridAnnouncements
 {
     grid-area: 1/2/2/-1;
-    
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    padding: 1.2em;
 }
 
 .gridTrending{
     grid-area: 2/2/3/-1;
-    
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    padding: 1.2em;
 }
 
 
@@ -245,7 +254,7 @@ input[type=search]:focus{
     background-color: #EBFEF6;
     border-left: 0.5em outset #FC6471;
     border-radius: 12px;
-    width: 400px;
+    width: 350px;
     height: 250px; 
     padding: 0.8rem;
     display: grid;
@@ -280,6 +289,7 @@ input[type=search]:focus{
     background-color: rgba(252, 100, 113, 0.411);
     border: none;
     border-radius: 2rem;
+    transition: 0.3s;
 }
 
 .favorite{
@@ -292,4 +302,12 @@ input[type=search]:focus{
 
 .fork{
     grid-column: 4/5;
+}
+
+.announcementTitle{
+    grid-template-rows: 1/2;
+}
+
+.trendingTitle{
+
 }
