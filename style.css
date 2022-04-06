@@ -14,14 +14,14 @@ button{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebarContainer{
     grid-column: 1/2;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
     background-color: #9ac5f3;
 }
 
@@ -66,7 +66,8 @@ button{
 }
 
 .pageHeader img{
-    height: 1.5rem; 
+    height: 1.5rem;
+    cursor: pointer; 
 }
 
 .searchBar input{
@@ -77,6 +78,7 @@ button{
     background-color: aliceblue;
     font-size: 1rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 input[type=search]:focus{
@@ -100,6 +102,7 @@ input[type=search]:focus{
 
 .profileName{
     padding: 1rem;
+    cursor: pointer;
 }
 
 .sidebarTop{
@@ -109,7 +112,6 @@ input[type=search]:focus{
     display: grid;
     align-content: center;
     gap: 0.8rem;
-    
     /* padding-bottom: 4rem; */
 }
 
@@ -117,6 +119,11 @@ input[type=search]:focus{
     padding-left: 2.5rem; 
     padding-right: 1rem;
     height: 1.5rem; 
+    cursor: pointer;
+}
+
+.sidebarTop span{
+    cursor: pointer;
 }
 
 .sidebarTop div{
@@ -141,6 +148,11 @@ input[type=search]:focus{
     padding-left: 2.5rem; 
     padding-right: 1rem;
     height: 1.5rem;
+    cursor: pointer;
+}
+
+.sidebarBottom span{
+    cursor: pointer;
 }
 
 .pageTopperContainer{
@@ -239,6 +251,7 @@ input[type=search]:focus{
     display: grid;
     grid-template-rows: 2rem 1fr;
     padding: 1.2em;
+    align-items: center;
 }
 
 .gridTrending{
@@ -247,8 +260,9 @@ input[type=search]:focus{
     display: grid;
     grid-template-rows: 2rem 1fr;
     padding: 1.2em;
-}
 
+    align-items: center;
+}
 
 .card{
     background-color: #EBFEF6;
@@ -259,6 +273,7 @@ input[type=search]:focus{
     padding: 0.8rem;
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
+    box-shadow: 5px 5px 10px gray;
 }
 .cardTitle{
     font-weight: bold;
@@ -308,6 +323,48 @@ input[type=search]:focus{
     grid-template-rows: 1/2;
 }
 
-.trendingTitle{
+.announcementCard{
+    background-color: #EBFEF6;
+    border-radius: 12px;
+    padding: 0rem 1rem;
+    box-shadow: 5px 5px 10px gray;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
 
+[class$="CardMessage"]{
+    font-size: 0.6rem;
+    font-weight: normal;
+    margin: 0px;
+    justify-self: start;
+}
+
+[class$="CardTitle"]{
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+.mentenanceMessage{
+    grid-row: 1/2;
+    display: grid;
+    align-content: center;
+    justify-content: center; 
+}
+
+.communityMessage{
+    grid-row: 2/3;
+    display: grid;
+    border-top: solid thin lightgray;
+    border-bottom: solid thin lightgray;
+    align-content: center;
+    justify-content: center; 
+}
+
+.privacyMessage{
+    grid-row: 3/4;
+    display: grid;
+    margin-bottom: 1rem;
+    align-content: center;
+    justify-content: center; 
 }
