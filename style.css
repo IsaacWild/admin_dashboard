@@ -435,3 +435,11 @@ input[type=search]:focus{
     background-color: rgb(253, 0, 0);
     outline: 1px solid slategrey;
 }
+
+.sidebarTop span:hover{
+    text-decoration: underline;
+} 
+
+.sidebarBottom span:hover{
+    text-decoration: underline;
+} 
