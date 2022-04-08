@@ -87,6 +87,8 @@ button{
 input[type=search]:focus{
     outline: none;
     background-color: #5ba1ec;
+    box-shadow: 3px 3px 5px #4d8aca;
+    transition: 0.5s;
 }
 
 .footer{
