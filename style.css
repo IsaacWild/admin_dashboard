@@ -78,7 +78,7 @@ button{
     width: clamp(10vw,50vw,70vw);
     height: 1.8rem;
     border: none;
-    background-color: aliceblue;
+    background-color: #9ac5f3;
     font-size: 1rem;
     padding: 1rem;
     cursor: pointer;
@@ -86,7 +86,7 @@ button{
 
 input[type=search]:focus{
     outline: none;
-    background-color: honeydew;
+    background-color: #5ba1ec;
 }
 
 .footer{
